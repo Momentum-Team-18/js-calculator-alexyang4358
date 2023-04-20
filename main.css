@@ -4,7 +4,7 @@ HTML * {
     font-weight: normal;
 }
 
-.calculator-grid {
+.calculatorContainer {
     display: grid;
     justify-content: center;
     align-content: center;
@@ -15,7 +15,7 @@ HTML * {
 
 }
 
-.calculator-grid > button {
+.calculatorContainer > button {
     cursor: pointer;
     font-size: 32px;
     border: 2px solid white;
@@ -23,16 +23,8 @@ HTML * {
     background-color: aquamarine;
 }
 
-.calculator-grid > button:hover {
+.calculatorContainer > button:hover {
     background-color: rgb(111, 228, 189);
-}
-
-.span-three {
-    grid-column: span 3;
-}
-
-.span-two {
-    grid-column: span 2;
 }
 
 .output {
@@ -46,9 +38,10 @@ HTML * {
     padding: 10px;
 }
 
-.output .current-num {
+.output #outputContainer {
     color:rgb(255, 255, 255);
-    font-size: 35px;
+    font-size: 20px;
     display: flex;
     align-items: flex-end;
 }
+
